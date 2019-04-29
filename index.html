@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tesseract PoC</title>
+</head>
+<body>
+<main>
+  <h1>
+    Tesseract PoC
+  </h1>
+  <article>
+    <h2>
+      Image
+    </h2>
+    <label for="image">
+      Load image
+    </label>
+    <input type="file" name="image" id="image" accept="image/*">
+  </article>
+  <article>
+    <h2>Progress</h2>
+    <progress id="progress" value="0"></progress>
+  </article>
+  <article>
+    <h2>Text</h2>
+    <div id="text"></div>
+  </article>
+</main>
+<script src="node_modules/tesseract.js/dist/tesseract.min.js"></script>
+<script src="src/index.js"></script>
+</body>
+</html>
